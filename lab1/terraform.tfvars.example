@@ -1,0 +1,15 @@
+application_name  = "integradora"
+length            = 16
+enable_monitoring = true
+regions           = ["us-east-1", "us-west-2"]
+environment_tags = {
+  dev  = "Development"
+  prod = "Production"
+}
+instance_count = 3
+application_config = {
+  version      = "1.0.0"
+  maintainer   = "John Doe"
+  dependencies = ["dependency1", "dependency2"]
+}
+allowed_networks = ["10.0.0.0/16", "10.1.0.0/16"]
